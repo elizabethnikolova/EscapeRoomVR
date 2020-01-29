@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{61C59BD9-A810-CE24-185B-F9F7DC0BBED3}</ProjectGuid>
+    <ProjectGuid>{F60FE8FF-E120-C61B-0E51-F711515648CD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>SteamVR_Actions</AssemblyName>
@@ -65,10 +65,10 @@
      <Compile Include="Assets\SteamVR_Input\SteamVR_Input_Initialization.cs" />
      <None Include="Assets\SteamVR_Input\SteamVR_Actions.asmdef" />
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Data/Uni/Semester 7/VirtualEngineering/EscapeRoom/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Data/Uni/Semester 7/VirtualEngineering/EscapeRoomVR/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Data/Uni/Semester 7/VirtualEngineering/EscapeRoom/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Data/Uni/Semester 7/VirtualEngineering/EscapeRoomVR/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -260,7 +260,7 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Valve.Newtonsoft.Json">
- <HintPath>C:/Data/Uni/Semester 7/VirtualEngineering/EscapeRoom/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Data/Uni/Semester 7/VirtualEngineering/EscapeRoomVR/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.19f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -610,7 +610,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="SteamVR.csproj">
-      <Project>{5E8C7539-FD03-24B6-4107-F5B9A9DAA80D}</Project>
+      <Project>{D17635A7-AC93-DEBD-DFCE-F2C13E01ADA0}</Project>
       <Name>SteamVR</Name>
     </ProjectReference>
   </ItemGroup>

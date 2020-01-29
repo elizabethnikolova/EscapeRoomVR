@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4190FBC9-CD5D-FA5A-360D-403CAE57297A}</ProjectGuid>
+    <ProjectGuid>{D53368C0-40F3-9AC4-8698-C853A072A085}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -55,33 +55,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\PlayerController.cs" />
      <Compile Include="Assets\ShowControllers.cs" />
+     <Compile Include="Assets\SimpleAttach.cs" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Data/Uni/Semester 7/VirtualEngineering/EscapeRoom/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Data/Uni/Semester 7/VirtualEngineering/EscapeRoomVR/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Data/Uni/Semester 7/VirtualEngineering/EscapeRoom/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Data/Uni/Semester 7/VirtualEngineering/EscapeRoomVR/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Data/Uni/Semester 7/VirtualEngineering/EscapeRoom/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Data/Uni/Semester 7/VirtualEngineering/EscapeRoomVR/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Data/Uni/Semester 7/VirtualEngineering/EscapeRoom/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Data/Uni/Semester 7/VirtualEngineering/EscapeRoomVR/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Data/Uni/Semester 7/VirtualEngineering/EscapeRoom/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Data/Uni/Semester 7/VirtualEngineering/EscapeRoomVR/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Data/Uni/Semester 7/VirtualEngineering/EscapeRoom/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>C:/Data/Uni/Semester 7/VirtualEngineering/EscapeRoomVR/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Data/Uni/Semester 7/VirtualEngineering/EscapeRoom/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>C:/Data/Uni/Semester 7/VirtualEngineering/EscapeRoomVR/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Data/Uni/Semester 7/VirtualEngineering/EscapeRoom/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Data/Uni/Semester 7/VirtualEngineering/EscapeRoomVR/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Data/Uni/Semester 7/VirtualEngineering/EscapeRoom/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Data/Uni/Semester 7/VirtualEngineering/EscapeRoomVR/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -261,7 +263,7 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
  </Reference>
  <Reference Include="Valve.Newtonsoft.Json">
- <HintPath>C:/Data/Uni/Semester 7/VirtualEngineering/EscapeRoom/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Data/Uni/Semester 7/VirtualEngineering/EscapeRoomVR/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.19f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -611,23 +613,23 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="SteamVR_Actions.csproj">
-      <Project>{61C59BD9-A810-CE24-185B-F9F7DC0BBED3}</Project>
+      <Project>{F60FE8FF-E120-C61B-0E51-F711515648CD}</Project>
       <Name>SteamVR_Actions</Name>
     </ProjectReference>
     <ProjectReference Include="SteamVR_Input_Editor.csproj">
-      <Project>{CD8B9131-1464-B785-A613-B9B2D8F853DF}</Project>
+      <Project>{05A92647-8E3F-D487-1429-1B55F8CD397D}</Project>
       <Name>SteamVR_Input_Editor</Name>
     </ProjectReference>
     <ProjectReference Include="SteamVR_Editor.csproj">
-      <Project>{7A6FABBB-896C-FC61-1053-13445714F19A}</Project>
+      <Project>{26D2DCD8-AB9B-96B9-D387-3D03DB358612}</Project>
       <Name>SteamVR_Editor</Name>
     </ProjectReference>
     <ProjectReference Include="SteamVR.csproj">
-      <Project>{5E8C7539-FD03-24B6-4107-F5B9A9DAA80D}</Project>
+      <Project>{D17635A7-AC93-DEBD-DFCE-F2C13E01ADA0}</Project>
       <Name>SteamVR</Name>
     </ProjectReference>
     <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
-      <Project>{7E940051-8E00-2CFA-4C55-B3CE7A10AEE6}</Project>
+      <Project>{A308E418-3484-CCAA-FB2E-AF048E50A86B}</Project>
       <Name>SteamVR_Windows_EditorHelper</Name>
     </ProjectReference>
   </ItemGroup>
