@@ -58,6 +58,10 @@
       "type": "vibration"
     },
     {
+      "name": "/actions/default/out/SelectMonitor",
+      "type": "vibration"
+    },
+    {
       "name": "/actions/platformer/in/Move",
       "type": "vector2"
     },
