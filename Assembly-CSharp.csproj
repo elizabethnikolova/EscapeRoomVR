@@ -58,6 +58,7 @@
      <Compile Include="Assets\BodyCollision.cs" />
      <Compile Include="Assets\ConnectToChair.cs" />
      <Compile Include="Assets\ConnectToMonitor.cs" />
+     <Compile Include="Assets\PipeClick.cs" />
      <Compile Include="Assets\PlayerController.cs" />
      <Compile Include="Assets\SelectMonitor.cs" />
      <Compile Include="Assets\ShowControllers.cs" />

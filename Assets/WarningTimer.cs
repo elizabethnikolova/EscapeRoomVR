@@ -24,8 +24,7 @@ public class WarningTimer : MonoBehaviour
             }
             else
             {
-                GameObject canvas = GameObject.Find("Canvas");
-                canvas.gameObject.transform.Find("MonitorNotConnectedWarning").gameObject.SetActive(false);
+                gameObject.SetActive(false);
                 timeRemaining = displayTime;
                 timerIsRunning = false;
             }

@@ -7,16 +7,7 @@ using Valve.VR.InteractionSystem;
 public class SelectMonitor : MonoBehaviour
 {
     public bool connected;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    private void OnAttachedToHand(Hand hand)
-    {
-        Debug.Log("Attached to hand");
-    }
+    public GameObject warningMessage;
 
     private void HandHoverUpdate(Hand hand)
     {
@@ -26,10 +17,12 @@ public class SelectMonitor : MonoBehaviour
             if(!connected)
             {
                 Debug.Log("Not connected");
-                GameObject canvas = GameObject.Find("Canvas");
-                GameObject warningMessage = canvas.gameObject.transform.Find("MonitorNotConnectedWarning").gameObject;
                 warningMessage.SetActive(true);
                 warningMessage.GetComponent<WarningTimer>().timerIsRunning = true;
+            }
+            else
+            {
+
             }
         }
     }
