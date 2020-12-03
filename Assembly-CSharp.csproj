@@ -60,6 +60,7 @@
      <Compile Include="Assets\ConnectToMonitor.cs" />
      <Compile Include="Assets\Keypad\Script\Playsound.cs" />
      <Compile Include="Assets\KeypadButtonClick.cs" />
+     <Compile Include="Assets\OpenDoor.cs" />
      <Compile Include="Assets\PipeClick.cs" />
      <Compile Include="Assets\PlayerController.cs" />
      <Compile Include="Assets\SafeHandlePress.cs" />
@@ -67,6 +68,7 @@
      <Compile Include="Assets\SelectMonitor.cs" />
      <Compile Include="Assets\ShowControllers.cs" />
      <Compile Include="Assets\SimpleAttach.cs" />
+     <Compile Include="Assets\UnlockDoor.cs" />
      <Compile Include="Assets\WarningTimer.cs" />
      <None Include="Assets\Models\Key\readME keys.txt" />
  <Reference Include="Unity.Timeline.Editor">

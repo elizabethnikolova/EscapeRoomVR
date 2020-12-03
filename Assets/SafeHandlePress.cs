@@ -23,9 +23,8 @@ public class SafeHandlePress : MonoBehaviour
         {
             if (safeScript.unlocked)
             {
+                GetComponentInParent<Animator>().SetTrigger("OpenSafeDoor");
                 safeScript.PlayOpenDoorSound();
-                doorClosed.SetActive(false);
-                doorOpen.SetActive(true);
             }
             else
             {
