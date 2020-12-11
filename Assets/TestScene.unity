@@ -788,7 +788,7 @@ GameObject:
   - component: {fileID: 137069197}
   - component: {fileID: 137069196}
   m_Layer: 0
-  m_Name: Pipe1 (13)
+  m_Name: StraightPipe1 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -820,7 +820,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8ae893e8045f44da697300a56a414b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
+  correctRotation:
+  - 0
+  - 180
   isPlaced: 0
 --- !u!65 &137069197
 BoxCollider:
@@ -1755,7 +1757,7 @@ GameObject:
   - component: {fileID: 240461719}
   - component: {fileID: 240461718}
   m_Layer: 0
-  m_Name: Pipe1 (17)
+  m_Name: CurvePipe1 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1787,7 +1789,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8ae893e8045f44da697300a56a414b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
+  correctRotation:
+  - 270
   isPlaced: 0
 --- !u!65 &240461719
 BoxCollider:
@@ -2484,7 +2487,7 @@ GameObject:
   - component: {fileID: 323407657}
   - component: {fileID: 323407656}
   m_Layer: 0
-  m_Name: Pipe1 (7)
+  m_Name: CurvePipe1 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2516,7 +2519,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8ae893e8045f44da697300a56a414b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
+  correctRotation:
+  - 0
   isPlaced: 0
 --- !u!65 &323407657
 BoxCollider:
@@ -2591,7 +2595,7 @@ GameObject:
   - component: {fileID: 382422359}
   - component: {fileID: 382422358}
   m_Layer: 0
-  m_Name: Pipe1 (2)
+  m_Name: StraightPipe1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2623,7 +2627,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8ae893e8045f44da697300a56a414b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
+  correctRotation:
+  - 0
+  - 180
   isPlaced: 0
 --- !u!65 &382422359
 BoxCollider:
@@ -3179,7 +3185,7 @@ GameObject:
   - component: {fileID: 520429334}
   - component: {fileID: 520429333}
   m_Layer: 0
-  m_Name: Pipe1 (3)
+  m_Name: CurvePipe1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3211,7 +3217,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8ae893e8045f44da697300a56a414b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
+  correctRotation:
+  - 0
   isPlaced: 0
 --- !u!65 &520429334
 BoxCollider:
@@ -3286,7 +3293,7 @@ GameObject:
   - component: {fileID: 547434929}
   - component: {fileID: 547434928}
   m_Layer: 0
-  m_Name: Pipe1 (18)
+  m_Name: CurvePipe1 (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3318,7 +3325,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8ae893e8045f44da697300a56a414b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
+  correctRotation:
+  - 0
   isPlaced: 0
 --- !u!65 &547434929
 BoxCollider:
@@ -6266,7 +6274,7 @@ GameObject:
   - component: {fileID: 986678438}
   - component: {fileID: 986678437}
   m_Layer: 0
-  m_Name: Pipe1 (12)
+  m_Name: CurvePipe1 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6298,7 +6306,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8ae893e8045f44da697300a56a414b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
+  correctRotation:
+  - 0
   isPlaced: 0
 --- !u!65 &986678438
 BoxCollider:
@@ -8301,7 +8310,7 @@ GameObject:
   - component: {fileID: 1372320540}
   - component: {fileID: 1372320539}
   m_Layer: 0
-  m_Name: Pipe1 (11)
+  m_Name: StraightPipe1 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8333,7 +8342,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8ae893e8045f44da697300a56a414b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
+  correctRotation:
+  - 0
+  - 180
   isPlaced: 0
 --- !u!65 &1372320540
 BoxCollider:
@@ -8584,7 +8595,7 @@ GameObject:
   - component: {fileID: 1396972967}
   - component: {fileID: 1396972966}
   m_Layer: 0
-  m_Name: Pipe1 (9)
+  m_Name: CurvePipe1 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8616,7 +8627,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8ae893e8045f44da697300a56a414b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
+  correctRotation:
+  - 270
   isPlaced: 0
 --- !u!65 &1396972967
 BoxCollider:
@@ -9105,7 +9117,7 @@ GameObject:
   - component: {fileID: 1469599689}
   - component: {fileID: 1469599688}
   m_Layer: 0
-  m_Name: Pipe1 (6)
+  m_Name: CurvePipe1 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9137,7 +9149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8ae893e8045f44da697300a56a414b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
+  correctRotation:
+  - 0
   isPlaced: 0
 --- !u!65 &1469599689
 BoxCollider:
@@ -9212,7 +9225,7 @@ GameObject:
   - component: {fileID: 1481348338}
   - component: {fileID: 1481348337}
   m_Layer: 0
-  m_Name: Pipe1 (10)
+  m_Name: StraightPipe1 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9244,7 +9257,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8ae893e8045f44da697300a56a414b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
+  correctRotation:
+  - 0
+  - 180
   isPlaced: 0
 --- !u!65 &1481348338
 BoxCollider:
@@ -9319,7 +9334,7 @@ GameObject:
   - component: {fileID: 1488482852}
   - component: {fileID: 1488482851}
   m_Layer: 0
-  m_Name: Pipe1 (14)
+  m_Name: CurvePipe1 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9351,7 +9366,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8ae893e8045f44da697300a56a414b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
+  correctRotation:
+  - 0
   isPlaced: 0
 --- !u!65 &1488482852
 BoxCollider:
@@ -9503,7 +9519,7 @@ GameObject:
   - component: {fileID: 1510177536}
   - component: {fileID: 1510177535}
   m_Layer: 0
-  m_Name: Pipe1 (15)
+  m_Name: CurvePipe1 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9535,7 +9551,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8ae893e8045f44da697300a56a414b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
+  correctRotation:
+  - 0
   isPlaced: 0
 --- !u!65 &1510177536
 BoxCollider:
@@ -10100,7 +10117,7 @@ GameObject:
   - component: {fileID: 1701235573}
   - component: {fileID: 1701235572}
   m_Layer: 0
-  m_Name: Pipe1 (19)
+  m_Name: StraightPipe1 (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10132,7 +10149,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8ae893e8045f44da697300a56a414b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
+  correctRotation:
+  - 0
+  - 180
   isPlaced: 0
 --- !u!65 &1701235573
 BoxCollider:
@@ -10559,7 +10578,7 @@ GameObject:
   - component: {fileID: 1804351799}
   - component: {fileID: 1804351798}
   m_Layer: 0
-  m_Name: Pipe1 (20)
+  m_Name: StraightPipe1 (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10591,7 +10610,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8ae893e8045f44da697300a56a414b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
+  correctRotation:
+  - 0
+  - 180
   isPlaced: 0
 --- !u!65 &1804351799
 BoxCollider:
@@ -10765,7 +10786,7 @@ GameObject:
   - component: {fileID: 1824521637}
   - component: {fileID: 1824521636}
   m_Layer: 0
-  m_Name: Pipe1 (4)
+  m_Name: CurvePipe1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10797,7 +10818,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8ae893e8045f44da697300a56a414b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
+  correctRotation:
+  - 0
   isPlaced: 0
 --- !u!65 &1824521637
 BoxCollider:
@@ -11179,7 +11201,7 @@ GameObject:
   - component: {fileID: 1889601859}
   - component: {fileID: 1889601858}
   m_Layer: 0
-  m_Name: Pipe1 (5)
+  m_Name: CurvePipe1 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11211,7 +11233,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8ae893e8045f44da697300a56a414b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
+  correctRotation:
+  - 270
   isPlaced: 0
 --- !u!65 &1889601859
 BoxCollider:
@@ -11389,7 +11412,7 @@ GameObject:
   - component: {fileID: 1909098435}
   - component: {fileID: 1909098434}
   m_Layer: 0
-  m_Name: Pipe1 (1)
+  m_Name: StraightPipe1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11421,7 +11444,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8ae893e8045f44da697300a56a414b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
+  correctRotation:
+  - 0
+  - 180
   isPlaced: 0
 --- !u!65 &1909098435
 BoxCollider:
@@ -11828,7 +11853,7 @@ GameObject:
   - component: {fileID: 1994585990}
   - component: {fileID: 1994585989}
   m_Layer: 0
-  m_Name: Pipe1 (8)
+  m_Name: StraightPipe1 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11860,7 +11885,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8ae893e8045f44da697300a56a414b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
+  correctRotation:
+  - 0
+  - 180
   isPlaced: 0
 --- !u!65 &1994585990
 BoxCollider:
@@ -12186,7 +12213,7 @@ GameObject:
   - component: {fileID: 2057434502}
   - component: {fileID: 2057434501}
   m_Layer: 0
-  m_Name: Pipe1 (16)
+  m_Name: StraightPipe1 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12218,7 +12245,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8ae893e8045f44da697300a56a414b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
+  correctRotation:
+  - 0
+  - 180
   isPlaced: 0
 --- !u!65 &2057434502
 BoxCollider:
