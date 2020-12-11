@@ -16,14 +16,14 @@ public class PipeScript : MonoBehaviour
 
     private void Awake()
     {
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        gameManager = GameObject.Find("Monitor/PipesGame/GameManager").GetComponent<GameManager>();
     }
 
     private void Start()
     {
         PossibleRots = correctRotation.Length;
         int rand = Random.Range(0, rotations.Length);
-        transform.eulerAngles = new Vector3(0, 0, rotations[rand]);
+        transform.eulerAngles = new Vector3(0, 90, rotations[rand]);
         
         if(PossibleRots > 1)
         {
@@ -45,7 +45,7 @@ public class PipeScript : MonoBehaviour
 
     private void OnMouseDown()
     {
-        transform.Rotate(new Vector3(0, 0, 90));
+        transform.Rotate(new Vector3(0, 90, 90));
 
         if (PossibleRots > 1)
         {
