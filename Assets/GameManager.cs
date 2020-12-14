@@ -13,12 +13,12 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     int correctedPipes = 0;
 
+    public int safeCode;
     public GameObject WinText;
 
     // Start is called before the first frame update
     void Start()
     {
-        WinText.SetActive(false);
         totalPipes = PipesHolder.transform.childCount;
 
         Pipes = new GameObject[totalPipes];
@@ -33,11 +33,9 @@ public class GameManager : MonoBehaviour
     {
         correctedPipes += 1;
 
-        Debug.Log("correct Move");
-
         if(correctedPipes == totalPipes)
         {
-            Debug.Log("You win!");
+            WinText.transform.Find("Canvas").Find("Text").GetComponent<Text>().text += safeCode;
             WinText.SetActive(true);
         }
     }

@@ -11,9 +11,9 @@ public class ConnectToMonitor : MonoBehaviour
     {
         if (collision.gameObject.name == "Monitor")
         {
-            Debug.Log("Connected to Monitor");
             Destroy(gameObject);
-            pipesGame.SetActive(true);  
+            monitor.transform.Find("InfoScreenSaver").gameObject.SetActive(false);
+            monitor.transform.Find("PipesGame").gameObject.SetActive(true);  
             monitor.GetComponent<SelectMonitor>().connected = true;
         }
     }

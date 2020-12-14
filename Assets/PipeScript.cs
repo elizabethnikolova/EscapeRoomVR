@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR;
+using Valve.VR.InteractionSystem;
 
 public class PipeScript : MonoBehaviour
 {
@@ -13,6 +15,7 @@ public class PipeScript : MonoBehaviour
     int PossibleRots = 1;
 
     GameManager gameManager;
+    int EPSILON = 10;
 
     private void Awake()
     {
@@ -27,7 +30,7 @@ public class PipeScript : MonoBehaviour
         
         if(PossibleRots > 1)
         {
-            if (transform.eulerAngles.z == correctRotation[0] || transform.eulerAngles.z == correctRotation[1])
+            if (isEqual(transform.eulerAngles.z, correctRotation[0]) || isEqual(transform.eulerAngles.z, correctRotation[1]))
             {
                 isPlaced = true;
                 gameManager.correctMove();
@@ -35,7 +38,7 @@ public class PipeScript : MonoBehaviour
         }
         else
         {
-            if (transform.eulerAngles.z == correctRotation[0])
+            if (isEqual(transform.eulerAngles.z, correctRotation[0]))
             {
                 isPlaced = true;
                 gameManager.correctMove();
@@ -43,35 +46,43 @@ public class PipeScript : MonoBehaviour
         }
     }
 
-    private void OnMouseDown()
+    private void HandHoverUpdate(Hand hand)
     {
-        transform.Rotate(new Vector3(0, 90, 90));
+        if (hand.GetGrabStarting() != GrabTypes.None)
+        {
+            transform.Rotate(new Vector3(0, 0, 90));
 
-        if (PossibleRots > 1)
-        {
-            if (transform.eulerAngles.z == correctRotation[0] || transform.eulerAngles.z == correctRotation[1] && isPlaced == false)
+            if (PossibleRots > 1)
             {
-                isPlaced = true;
-                gameManager.correctMove();
+                if (isEqual(transform.eulerAngles.z, correctRotation[0]) || isEqual(transform.eulerAngles.z, correctRotation[1]) && isPlaced == false)
+                {
+                    isPlaced = true;
+                    gameManager.correctMove();
+                }
+                else if (isPlaced == true)
+                {
+                    isPlaced = false;
+                    gameManager.wrongMove();
+                }
             }
-            else if (isPlaced == true)
+            else
             {
-                isPlaced = false;
-                gameManager.wrongMove();
+                if (isEqual(transform.eulerAngles.z, correctRotation[0]) && isPlaced == false)
+                {
+                    isPlaced = true;
+                    gameManager.correctMove();
+                }
+                else if (isPlaced == true)
+                {
+                    isPlaced = false;
+                    gameManager.wrongMove();
+                }
             }
         }
-        else
-        {
-            if (transform.eulerAngles.z == correctRotation[0] && isPlaced == false)
-            {
-                isPlaced = true;
-                gameManager.correctMove();
-            }
-            else if (isPlaced == true)
-            {
-                isPlaced = false;
-                gameManager.wrongMove();
-            }
-        }
+    }
+
+    private bool isEqual(float pipeZ, float correctZ)
+    {
+        return pipeZ >= correctZ - EPSILON && pipeZ <= correctZ + EPSILON;
     }
 }

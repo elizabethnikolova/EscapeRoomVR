@@ -13,10 +13,8 @@ public class SelectMonitor : MonoBehaviour
     {
         if (hand.GetGrabStarting() != GrabTypes.None)
         {
-            Debug.Log("Clicked monitor");
             if(!connected)
             {
-                Debug.Log("Not connected");
                 warningMessage.SetActive(true);
                 warningMessage.GetComponent<WarningTimer>().timerIsRunning = true;
             }
