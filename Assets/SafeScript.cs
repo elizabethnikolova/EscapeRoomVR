@@ -6,9 +6,11 @@ public class SafeScript : MonoBehaviour
 { 
     private int enteredCode;
     private AudioSource audioSource;
+    private int code;
 
     public bool unlocked;
-    public int code;
+
+    public GameObject pipesGameManager;
 
     public AudioClip numberButtonClick;
     public AudioClip maxDigitsError;
@@ -20,6 +22,8 @@ public class SafeScript : MonoBehaviour
 
     void Start()
     {
+        code = Random.Range(1000, 9999);
+        pipesGameManager.GetComponent<GameManager>().safeCode = code;
         enteredCode = 0;
         unlocked = false;
         audioSource = GetComponent<AudioSource>();
@@ -30,14 +34,12 @@ public class SafeScript : MonoBehaviour
         if (enteredCode > 999)
         {
             audioSource.PlayOneShot(maxDigitsError, 0.7F);
-            Debug.Log("Max digits entered");
         }
         else
         {
             gameObject.GetComponentInChildren<AudioSource>().Play();
             audioSource.PlayOneShot(numberButtonClick, 0.7F);
             enteredCode = enteredCode * 10 + digit;
-            Debug.Log("entered code updated to: " + enteredCode);
         }
     }
 
@@ -47,12 +49,10 @@ public class SafeScript : MonoBehaviour
         {
             unlocked = true;
             audioSource.PlayOneShot(unlockSound, 0.7F);
-            Debug.Log("Safe unlocked");
         }
         else
         {
             audioSource.PlayOneShot(invalidCodeError, 0.7F);
-            Debug.Log("Invalid code");
         }
     }
 
@@ -60,7 +60,6 @@ public class SafeScript : MonoBehaviour
     {
         enteredCode = 0;
         audioSource.PlayOneShot(clearCodeClick, 0.7F);
-        Debug.Log("Cleared code");
     }
 
     public void PlayUnableToOpenSound()

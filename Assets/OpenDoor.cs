@@ -6,11 +6,17 @@ using Valve.VR.InteractionSystem;
 
 public class OpenDoor : MonoBehaviour
 {
+    private AudioSource audioSource;
+
     public bool locked;
+
+    public AudioClip doorLockedSound;
+    public AudioClip unlockOpenDoorSound;
 
     void Start()
     {
         locked = true;
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void HandHoverUpdate(Hand hand)
@@ -19,12 +25,14 @@ public class OpenDoor : MonoBehaviour
         {
             if (locked)
             {
-                Debug.Log("Room Door locked, cannot open");
-            }
-            else
-            {
-                GetComponentInParent<Animator>().SetTrigger("OpenDoor");
+                audioSource.PlayOneShot(doorLockedSound, 0.7F);
             }
         }
+    }
+
+    public void UnlockAndOpenDoor()
+    {
+        GetComponentInParent<Animator>().SetTrigger("OpenDoor");
+        audioSource.PlayOneShot(unlockOpenDoorSound, 0.7F);
     }
 }
