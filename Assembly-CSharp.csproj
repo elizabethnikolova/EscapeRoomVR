@@ -69,6 +69,7 @@
      <Compile Include="Assets\SelectMonitor.cs" />
      <Compile Include="Assets\ShowControllers.cs" />
      <Compile Include="Assets\SimpleAttach.cs" />
+     <Compile Include="Assets\SwitchLight.cs" />
      <Compile Include="Assets\UnlockDoor.cs" />
      <Compile Include="Assets\WarningTimer.cs" />
      <None Include="Assets\Models\Key\readME keys.txt" />
