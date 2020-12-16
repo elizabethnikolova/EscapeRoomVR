@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SafeScript : MonoBehaviour
-{ 
+{
+    private const float SOUND_VOLUME = 0.08F;
     private int enteredCode;
     private AudioSource audioSource;
     private int code;
@@ -33,12 +34,12 @@ public class SafeScript : MonoBehaviour
     {
         if (enteredCode > 999)
         {
-            audioSource.PlayOneShot(maxDigitsError, 0.7F);
+            audioSource.PlayOneShot(maxDigitsError, SOUND_VOLUME);
         }
         else
         {
             gameObject.GetComponentInChildren<AudioSource>().Play();
-            audioSource.PlayOneShot(numberButtonClick, 0.7F);
+            audioSource.PlayOneShot(numberButtonClick, SOUND_VOLUME);
             enteredCode = enteredCode * 10 + digit;
         }
     }
@@ -48,27 +49,27 @@ public class SafeScript : MonoBehaviour
         if (enteredCode == code)
         {
             unlocked = true;
-            audioSource.PlayOneShot(unlockSound, 0.7F);
+            audioSource.PlayOneShot(unlockSound, SOUND_VOLUME);
         }
         else
         {
-            audioSource.PlayOneShot(invalidCodeError, 0.7F);
+            audioSource.PlayOneShot(invalidCodeError, SOUND_VOLUME);
         }
     }
 
     public void ClearEnteredCode()
     {
         enteredCode = 0;
-        audioSource.PlayOneShot(clearCodeClick, 0.7F);
+        audioSource.PlayOneShot(clearCodeClick, SOUND_VOLUME);
     }
 
     public void PlayUnableToOpenSound()
     {
-        audioSource.PlayOneShot(doorStillLockedSound, 0.7F);
+        audioSource.PlayOneShot(doorStillLockedSound, SOUND_VOLUME);
     }
 
     public void PlayOpenDoorSound()
     {
-        audioSource.PlayOneShot(openDoorSound, 0.7F);
+        audioSource.PlayOneShot(openDoorSound, SOUND_VOLUME);
     }
 }
